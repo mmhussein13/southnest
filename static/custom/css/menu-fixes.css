@@ -1,0 +1,48 @@
+/* Fix for dropdown menus to prevent shifting */
+.dropdown-menu {
+    position: absolute !important;
+    transform: none !important;
+    top: 100% !important;
+    left: 0 !important;
+}
+
+/* Style for submenu dropdown */
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu > .dropdown-menu {
+    top: 0 !important;
+    left: 100% !important;
+    margin-top: -6px;
+    margin-left: 0;
+    border-radius: 4px;
+}
+
+.dropdown-submenu:hover > .dropdown-menu {
+    display: block;
+}
+
+/* Arrow for submenu items */
+.dropdown-submenu > a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #cccccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+/* Mobile adjustments */
+@media (max-width: 992px) {
+    .dropdown-submenu > .dropdown-menu {
+        left: 0 !important;
+        margin-left: 20px;
+        margin-top: 0;
+    }
+}

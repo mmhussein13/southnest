@@ -1,0 +1,173 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<!--page title-->
+<div class="pageTitle">
+    <div class="container">
+        <div class="pageTitleInner">
+            <h1>Ducks</h1>
+            <div class="breadcrumbs">
+                <ul>
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li>Poultry</li>
+                    <li>Ducks</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--page title end-->
+
+<!--service details start-->
+<div class="serviceSingleInner mb-80 mt-80">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-12">
+                <div class="serviceDetailsBox">
+                    <div class="serviceDetailsText">
+                        <h4>Duck Farming</h4>
+                        <p>Duck farming is a profitable agricultural enterprise that involves raising ducks primarily for meat, eggs, or feathers. Ducks are highly adaptable and can be raised in various environments, making them an excellent choice for both small-scale and commercial farming operations.</p>
+                        
+                        <h4>Benefits of Duck Farming</h4>
+                        <ul>
+                            <li>Ducks are more disease resistant compared to chickens</li>
+                            <li>They require less maintenance and care</li>
+                            <li>Ducks can be raised on land or water</li>
+                            <li>They are excellent foragers and natural pest controllers</li>
+                            <li>Duck eggs and meat command premium prices in the market</li>
+                        </ul>
+                        
+                        <div class="imgWrap mb-30">
+                            <img src="{% static 'images/hatching.png' %}" alt="duck-farming" class="img-fluid">
+                        </div>
+                        
+                        <h4>Popular Duck Breeds</h4>
+                        <p>Several duck breeds are commonly raised for different purposes:</p>
+                        
+                        <h5>Pekin Duck</h5>
+                        <p>A fast-growing breed with white feathers and orange beak and feet. Pekin ducks are primarily raised for meat production and can reach market weight in just 7-8 weeks.</p>
+                        
+                        <h5>Muscovy Duck</h5>
+                        <p>Known for their lean meat and excellent flavor. Muscovy ducks are also good egg producers and are more heat-tolerant than other breeds.</p>
+                        
+                        <h5>Khaki Campbell</h5>
+                        <p>An excellent egg-laying breed that can produce up to 340 eggs per year. They have a khaki-colored plumage and are known for their foraging abilities.</p>
+                        
+                        <h5>Indian Runner</h5>
+                        <p>Known for their upright posture and excellent egg-laying capacity. Indian Runners are active foragers and are often kept for pest control in gardens.</p>
+                    </div>
+                </div>
+                
+                <div class="serviceDetailsBox">
+                    <div class="serviceDetailsText">
+                        <h4>Our Duck Products</h4>
+                        <p>At Southnest Farm, we offer a variety of duck products to meet your farming needs:</p>
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="productBox">
+                                    <h5>Day-Old Ducklings</h5>
+                                    <p>We offer healthy day-old ducklings of various breeds, perfect for starting your duck farming venture.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="productBox">
+                                    <h5>Growing Ducks</h5>
+                                    <p>Well-raised growing ducks that have passed the critical early stages and are ready for your farm.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="productBox">
+                                    <h5>Adult Breeding Pairs</h5>
+                                    <p>Quality breeding pairs selected for optimal genetic traits and productivity.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="productBox">
+                                    <h5>Duck Feed</h5>
+                                    <p>Specially formulated feed for different stages of duck growth for optimal health and productivity.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="serviceDetailsBox">
+                    <div class="serviceDetailsText">
+                        <h4>Duck Farming Guide</h4>
+                        <p>Starting a duck farming operation requires careful planning. Here's a basic guide to help you get started:</p>
+                        
+                        <h5>Housing Requirements</h5>
+                        <p>Ducks need protection from predators and harsh weather. A simple shelter with adequate ventilation and protection from rain is sufficient. The floor should be covered with clean bedding material like straw or wood shavings.</p>
+                        
+                        <h5>Water Access</h5>
+                        <p>While ducks don't necessarily need a pond to swim in, they do need access to water deep enough to submerge their heads. This helps them clean their nostrils and eyes.</p>
+                        
+                        <h5>Feeding</h5>
+                        <p>Ducks can be fed commercial duck feed supplemented with greens, vegetables, and insects. They are excellent foragers and will find a significant portion of their food if allowed to free-range.</p>
+                        
+                        <h5>Health Management</h5>
+                        <p>Regular health checks, clean housing, and proper nutrition are key to maintaining healthy ducks. Look out for signs of illness such as lethargy, loss of appetite, or unusual droppings.</p>
+                        
+                        <div class="btnGroup mt-30">
+                            <a href="{% url 'contact_us' %}" class="btn">Contact Us for More Information</a>
+                            <a href="{% url 'store' %}" class="btn">Shop Duck Products</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-12">
+                <div class="sidebar">
+                    <div class="serviceList">
+                        <h4>Our Poultry Categories</h4>
+                        <ul>
+                            <li><a href="{% url 'home' %}">Chicken <i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+                            <li class="active"><a href="{% url 'coming_soon' %}">Ducks <i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+                            <li><a href="{% url 'coming_soon' %}">Turkey <i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="downloadFiles">
+                        <h4>Download Files</h4>
+                        <div class="downloadFilesInner">
+                            <div class="downloadFile">
+                                <span class="fileName">Duck Breeding Guide</span>
+                                <a href="javascript:void(0);" class="fileLink"><i class="fa fa-download" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="downloadFile">
+                                <span class="fileName">Duck Feeding Chart</span>
+                                <a href="javascript:void(0);" class="fileLink"><i class="fa fa-download" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="downloadFile">
+                                <span class="fileName">Duck Housing Manual</span>
+                                <a href="javascript:void(0);" class="fileLink"><i class="fa fa-download" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="helpBox">
+                        <h4>Need Help?</h4>
+                        <div class="helpBoxInner">
+                            <p>Our team of duck farming experts is available to assist you with any questions or concerns.</p>
+                            <div class="contactInfo">
+                                <div class="contactInfoItem">
+                                    <i class="fa fa-phone" aria-hidden="true"></i>
+                                    <span>+256 743 09 3516</span>
+                                </div>
+                                <div class="contactInfoItem">
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                    <span>mmhussein13@gmail.com</span>
+                                </div>
+                            </div>
+                            <a href="{% url 'contact_us' %}" class="btn">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--service details end-->
+{% endblock content %}
